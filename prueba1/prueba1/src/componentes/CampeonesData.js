@@ -30,6 +30,22 @@ import kassadinSplash from '../img/kassadinSplash.jpg';
 import kindredSplash from '../img/kindredSplash.jpg';
 import leeSinSplash from '../img/leesinSplash.jpg';
 import lilliaSplash from '../img/lilliaSplash.jpg';
+import aatroxImage from '../img/aatrox.jpg';
+import akshanImage from '../img/akshan.jpg';
+import corkiImage from '../img/corki.jpg';
+import evelynnImage from '../img/evelynn.jpg';
+import gnarImage from '../img/gnar.jpg';
+import karthusImage from '../img/karthus.jpg';
+import nasusImage from '../img/nasus.jpg';
+import gravesImage from '../img/graves.jpg';
+import aatroxSplash from '../img/aatroxSplash.jpg';
+import akshanSplash from '../img/akshanSplash.jpg';
+import corkiSplash from '../img/corkiSplash.jpg';
+import evelynnSplash from '../img/evelynnSplash.jpg';
+import gnarSplash from '../img/gnarSplash.jpg';
+import gravesSplash from '../img/gravesSplash.jpg';
+import karthusSplash from '../img/karthusSplash.jpg';
+import nasusSplash from '../img/nasusSplash.jpg';
 
 const CampeonesData = [
     {
@@ -40,8 +56,11 @@ const CampeonesData = [
       name: 'Akali',
       lineaPrincipal: 'Central',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:80,
+        Mana:80,
+        ManaActual:60,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -56,8 +75,10 @@ const CampeonesData = [
       name: 'Blitzcrank',
       lineaPrincipal: 'Soporte',
       stats: {
-        HP: 100,
-        Mana: 50,
+        HP:200,
+        HPACTUAL:80,
+        Mana:80,
+        ManaActual:60,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -72,8 +93,11 @@ const CampeonesData = [
       name: 'Braum',
       lineaPrincipal: 'Soporte',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -88,8 +112,11 @@ const CampeonesData = [
       name: 'Caitlyn',
       lineaPrincipal: 'Tirador',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -104,8 +131,11 @@ const CampeonesData = [
       name: 'Chogat',
       lineaPrincipal: 'Superior',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -120,8 +150,11 @@ const CampeonesData = [
       name: 'Ekko',
       lineaPrincipal: 'Central',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -136,8 +169,11 @@ const CampeonesData = [
       name: 'Ezreal',
       lineaPrincipal: 'Tirador',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -152,8 +188,11 @@ const CampeonesData = [
       name: 'Fizz',
       lineaPrincipal: 'Central',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -168,8 +207,11 @@ const CampeonesData = [
       name: 'Garen',
       lineaPrincipal: 'Superior',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -184,8 +226,11 @@ const CampeonesData = [
       name: 'Gragas',
       lineaPrincipal: 'Central',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -200,8 +245,11 @@ const CampeonesData = [
       name: 'Janna',
       lineaPrincipal: 'Soporte',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -216,8 +264,11 @@ const CampeonesData = [
       name: 'Jhin',
       lineaPrincipal: 'Tirador',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -232,8 +283,11 @@ const CampeonesData = [
       name: 'Kassadin',
       lineaPrincipal: 'Central',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -248,8 +302,11 @@ const CampeonesData = [
       name: 'Kindred',
       lineaPrincipal: 'Jungla',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -264,8 +321,164 @@ const CampeonesData = [
       name: 'Lee Sin',
       lineaPrincipal: 'Jungla',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    
+    {
+      id: 17,
+      imagen: aatroxImage,
+      splash: aatroxSplash,
+      titulo: "La espada Darkin",
+      name: 'Aatrox',
+      lineaPrincipal: 'Superior',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 18,
+      imagen: akshanImage,
+      splash: akshanSplash,
+      titulo: "El centinela rebelde",
+      name: 'Akshan',
+      lineaPrincipal: 'Tirador',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 19,
+      imagen: corkiImage,
+      splash: corkiSplash,
+      titulo: "El bombardero osado",
+      name: 'Corki',
+      lineaPrincipal: 'Tirador',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 20,
+      imagen: evelynnImage,
+      splash: evelynnSplash,
+      titulo: "El abrazo de la agonía",
+      name: 'Evelynn',
+      lineaPrincipal: 'Jungla',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 21,
+      imagen: gnarImage,
+      splash: gnarSplash,
+      titulo: "El eslabón perdido",
+      name: 'gnar',
+      lineaPrincipal: 'Superior',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 22,
+      imagen: gravesImage,
+      splash: gravesSplash,
+      titulo: "El forajido",
+      name: 'Graves',
+      lineaPrincipal: 'Jungla',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 23,
+      imagen: karthusImage,
+      splash: karthusSplash,
+      titulo: "El canto de la muerte",
+      name: 'Karthus',
+      lineaPrincipal: 'Central',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
+        AD: 80,
+        AP: 0,
+        Armadura: 20,
+        ResistenciaMágica: 10,
+      },
+    },
+    {
+      id: 24,
+      imagen: nasusImage,
+      splash: nasusSplash,
+      titulo: "El curador de las arenas",
+      name: 'Nasus',
+      lineaPrincipal: 'Superior',
+      stats: {
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
@@ -280,8 +493,11 @@ const CampeonesData = [
       name: 'Lillia',
       lineaPrincipal: 'Jungla',
       stats: {
-        HP: 100,
-        Mana: 50,
+        
+        HP:100,
+        HPACTUAL:100,
+        Mana:80,
+        ManaActual:80,
         AD: 80,
         AP: 0,
         Armadura: 20,
