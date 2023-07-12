@@ -46,6 +46,7 @@ import gnarSplash from '../img/gnarSplash.jpg';
 import gravesSplash from '../img/gravesSplash.jpg';
 import karthusSplash from '../img/karthusSplash.jpg';
 import nasusSplash from '../img/nasusSplash.jpg';
+import HabilidadesData from './HabilidadesData';
 
 const CampeonesData = [
     {
@@ -65,6 +66,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -83,6 +89,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad3,
+          skill2:HabilidadesData[0].habilidad4,
+          skill3:HabilidadesData[0].habilidad5,
+        }
       },
     },
     {
@@ -102,6 +113,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -121,6 +137,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -140,6 +161,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -159,6 +185,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -178,6 +209,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -197,6 +233,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -216,6 +257,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -235,6 +281,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -254,6 +305,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -273,6 +329,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -292,6 +353,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -311,6 +377,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -330,6 +401,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     
@@ -350,6 +426,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -369,6 +450,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -388,6 +474,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -407,6 +498,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -426,6 +522,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -445,6 +546,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -464,6 +570,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -483,6 +594,11 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3,
+        }
       },
     },
     {
@@ -502,8 +618,15 @@ const CampeonesData = [
         AP: 0,
         Armadura: 20,
         ResistenciaMágica: 10,
+        Habilidades:{
+          skill1:HabilidadesData[0].habilidad1,
+          skill2:HabilidadesData[0].habilidad2,
+          skill3:HabilidadesData[0].habilidad3, 
+        }
       },
     },
   ];
-
+  
   export default CampeonesData;
+
+  

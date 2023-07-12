@@ -22,22 +22,12 @@ h1 {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 5px;
   padding: 10px;
-   
-  
-}
-
-.item{
-  
-  margin: auto;
-  
-  
 }
 
 .grid{
   display: flex;
   justify-content: end;
   min-height: 50vh;
-  
   flex-direction: column  ;
 }
 
@@ -60,8 +50,6 @@ padding-left:20px;
 padding-top:20px;
 padding-bottom:25px;
 border: 1px solid #ccc;
-
-  
 }
 
 .campeon-details .cardBarras{
@@ -69,8 +57,6 @@ border: 1px solid #ccc;
   padding-left:20px;
   padding-top:20px;
   padding-bottom:25px;
-  
-    
   }
 
 .campeon-details h3 {
@@ -79,7 +65,6 @@ border: 1px solid #ccc;
   margin-top: 1px;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  
 }
 
 
@@ -87,7 +72,6 @@ border: 1px solid #ccc;
   margin: 5px 0;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
 }
 
 .campeon-details .stats {
@@ -97,7 +81,10 @@ border: 1px solid #ccc;
   gap: 10px;
   background-color: rgba(116, 116, 116, 0.3);
   border-radius: 5px;
-  
+}
+
+.item:hover{
+  filter: saturate(150%);
 }
 
 .campeon-details .HP{
@@ -153,7 +140,6 @@ border: 1px solid #ccc;
 .container > .campeones-grid {
   flex-basis: 100%;
   position: relative;
-  
 }
 
 .barraHP{
@@ -168,14 +154,29 @@ border: 1px solid #ccc;
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
-  
 }
-
-.dialogo{
-  margin: 20vh 0vw 20vh 0vw;
-  border: #ccc solid 2px;
-  width: 35vw;
-  height: 40vh;
+.dialogo {
+  margin: 20vh 0vw;
+  width: 90%;
+  height: 80%;
   background-color: white;
   padding: 20px;
+  display: grid;
+  border: 2px solid #000;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.dialogo > div {
+  border: 2px solid #ccc;
+}
+
+.dialogo > div:nth-child(31) {
+  grid-row-end: 6; /* Último elemento ocupa la fila completa */
+}
+
+.habilidad{
+  background-color: blue;
+  width: 100%;
+  height: 100%;
 }
