@@ -65,7 +65,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -88,7 +88,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad3,
           skill2:HabilidadesData[0].habilidad4,
@@ -112,7 +112,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -136,7 +136,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -160,7 +160,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -184,7 +184,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -208,7 +208,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -232,7 +232,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -256,7 +256,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -280,7 +280,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -304,7 +304,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -328,7 +328,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -352,7 +352,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -376,7 +376,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -400,7 +400,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -425,7 +425,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -449,7 +449,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -473,7 +473,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -497,7 +497,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -521,7 +521,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -545,7 +545,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -569,7 +569,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -593,7 +593,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
@@ -617,7 +617,7 @@ const CampeonesData = [
         AD: 80,
         AP: 0,
         Armadura: 20,
-        ResistenciaMágica: 10,
+        ResistenciaMagica: 10,
         Habilidades:{
           skill1:HabilidadesData[0].habilidad1,
           skill2:HabilidadesData[0].habilidad2,
