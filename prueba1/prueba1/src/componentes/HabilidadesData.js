@@ -1,16 +1,16 @@
 const HabilidadesData = [
     { 
     habilidad1:{
-        nombre:'1',
+        nombre:'Ataque básico',
         descripcion:'Ataque basico',
-        mana:30,
+        mana:0,
         dmg:20,
         tipoDmg:'ad',
         cooldown:0,
         cooldown_actual:0,
     },
     habilidad2:{
-        nombre:'2',
+        nombre:'Golpe Veloz',
         descripcion:'Ataque basico',
         mana:10,
         dmg:20,
@@ -19,9 +19,9 @@ const HabilidadesData = [
         cooldown_actual:0,
     },
     habilidad3:{
-        nombre:'3',
-        descripcion:'Ataque basico',
-        mana:10,
+        nombre:'Fiereza',
+        descripcion:'Fiereza del valle',
+        mana:30,
         dmg:20,
         tipoDmg:'ad',
         cooldown:5,

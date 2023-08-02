@@ -11,10 +11,12 @@ const Tablero = ({
   ManaActual2,
   setManaActual1,
   setManaActual2,
-  h1,h2,h3
+  h1, h2, h3
 }) => {
-  const CampSkills1 = campeon1.stats.Habilidades;
-  const CampSkills2 = campeon2.stats.Habilidades;
+  const initialCampSkills1 = JSON.parse(JSON.stringify(campeon1.stats.Habilidades));
+  const initialCampSkills2 = JSON.parse(JSON.stringify(campeon2.stats.Habilidades));
+  const [CampSkills1, setCampSkills1] = useState(initialCampSkills1);
+  const [CampSkills2, setCampSkills2] = useState(initialCampSkills2);
   const [Turno, setTurno] = useState(1);
 
   useEffect(() => {
@@ -33,77 +35,94 @@ const Tablero = ({
     setManaActual2(ManaActual2);
   }, [ManaActual2]);
 
-  const CooldownsChamp = () => {
-    if (Turno==1){
-      switch (true) {
-        case h1:
-          CampSkills1.skill1.cooldown_actual -= CampSkills1.skill1.cooldown;
-          console.log("el cd de la hab 1 de" + campeon1.name + "es: "+ CampSkills1.skill1.cooldown_actual)
-      
-          break;
-        case h2:
-          CampSkills1.skill1.cooldown_actual -= CampSkills1.skill2.cooldown;
-          break;
-        case h3:
-          CampSkills1.skill1.cooldown_actual -= CampSkills1.skill3.cooldown;
-          break;
-      }
+  useEffect(() => {
+    if (Turno === 1) {
+      const updatedSkills1 = {
+        ...CampSkills1,
+        skill1: { ...CampSkills1.skill1, cooldown_actual: Math.max(0, CampSkills1.skill1.cooldown_actual - 1) },
+        skill2: { ...CampSkills1.skill2, cooldown_actual: Math.max(0, CampSkills1.skill2.cooldown_actual - 1) },
+        skill3: { ...CampSkills1.skill3, cooldown_actual: Math.max(0, CampSkills1.skill3.cooldown_actual - 1) },
+      };
+      setCampSkills1(updatedSkills1);
+    } else if (Turno === 2) {
+      const updatedSkills2 = {
+        ...CampSkills2,
+        skill1: { ...CampSkills2.skill1, cooldown_actual: Math.max(0, CampSkills2.skill1.cooldown_actual - 1) },
+        skill2: { ...CampSkills2.skill2, cooldown_actual: Math.max(0, CampSkills2.skill2.cooldown_actual - 1) },
+        skill3: { ...CampSkills2.skill3, cooldown_actual: Math.max(0, CampSkills2.skill3.cooldown_actual - 1) },
+      };
+      setCampSkills2(updatedSkills2);
     }
-    else{
-      switch (true) {
-        case h1:
-          CampSkills2.skill1.cooldown_actual -= CampSkills2.skill1.cooldown;
-          console.log("el cd de la hab 1 de" + campeon2.name + "es: "+ CampSkills2.skill1.cooldown_actual)
-          break;
-        case h2:
-          CampSkills2.skill2.cooldown_actual -= CampSkills2.skill2.cooldown;
-          break;
-        case h3:
-          CampSkills2.skill3.cooldown_actual -= CampSkills2.skill3.cooldown;
-          break;
-      }
-    }
-  }
+  }, [Turno]);
+  
 
   const Camp1Hab1 = () => {
-    if (CampSkills1.skill1.cooldown_actual >= CampSkills1.skill1.cooldown) {
-      CooldownsChamp(h1=true, h2=false, h3=false)
+    console.log("mana 1" + ManaActual1);
+    if (CampSkills1.skill1.cooldown_actual === 0) {
       setTurno(2);
-      setVidaActual2(Vida2 - CampSkills1.skill1.dmg)
-      setManaActual1(ManaActual1 - CampSkills1.skill1.mana)
+      setVidaActual2(Vida2 - CampSkills1.skill1.dmg);
+      setManaActual1(ManaActual1 - CampSkills1.skill1.mana);
+      const updatedSkills1 = { ...CampSkills1, skill1: { ...CampSkills1.skill1, cooldown_actual: CampSkills1.skill1.cooldown } };
+      setCampSkills1(updatedSkills1);
     }
   };
+
   const Camp1Hab2 = () => {
-    setTurno(2);
-
-  };
-  const Camp1Hab3 = () => {
-    setTurno(2);
-
-  };
-  const Camp2Hab1 = () => {
-
-    if (CampSkills2.skill1.cooldown > 0) {
-      setTurno(1);
-      setVidaActual1(Vida1 - CampSkills2.skill1.dmg)
-      setManaActual1(ManaActual1 - CampSkills1.skill1.mana)
-      CooldownsChamp(h1=true, h2=false, h3=false)
+    if (CampSkills1.skill2.cooldown_actual === 0) {
+      setTurno(2);
+      setVidaActual2(Vida2 - CampSkills1.skill2.dmg);
+      setManaActual1(ManaActual1 - CampSkills1.skill2.mana);
+      const updatedSkills1 = { ...CampSkills1, skill2: { ...CampSkills1.skill2, cooldown_actual: CampSkills1.skill2.cooldown } };
+      setCampSkills1(updatedSkills1);
     }
-
   };
+
+  const Camp1Hab3 = () => {
+    if (CampSkills1.skill3.cooldown_actual === 0) {
+      setTurno(2);
+      setVidaActual2(Vida2 - CampSkills1.skill3.dmg);
+      setManaActual1(ManaActual1 - CampSkills1.skill3.mana);
+      const updatedSkills1 = { ...CampSkills1, skill3: { ...CampSkills1.skill3, cooldown_actual: CampSkills1.skill3.cooldown } };
+      setCampSkills1(updatedSkills1);
+    }
+  };
+
+  const Camp2Hab1 = () => {
+    if (CampSkills2.skill1.cooldown_actual === 0) {
+      setTurno(1);
+      setVidaActual1(Vida1 - CampSkills2.skill1.dmg);
+      setManaActual2(ManaActual2 - CampSkills2.skill1.mana);
+      const updatedSkills2 = { ...CampSkills2, skill1: { ...CampSkills2.skill1, cooldown_actual: CampSkills2.skill1.cooldown } };
+      setCampSkills2(updatedSkills2);
+    }
+  };
+
   const Camp2Hab2 = () => {
-    setTurno(1);
-
+    if (CampSkills2.skill2.cooldown_actual === 0) {
+      setTurno(1);
+      setVidaActual1(Vida1 - CampSkills2.skill2.dmg);
+      setManaActual2(ManaActual2 - CampSkills2.skill2.mana);
+      const updatedSkills2 = { ...CampSkills2, skill2: { ...CampSkills2.skill2, cooldown_actual: CampSkills2.skill2.cooldown } };
+      setCampSkills2(updatedSkills2);
+    }
   };
+
   const Camp2Hab3 = () => {
-    setTurno(1);
-
+    if (CampSkills2.skill3.cooldown_actual === 0) {
+      setTurno(1);
+      setVidaActual1(Vida1 - CampSkills2.skill3.dmg);
+      setManaActual2(ManaActual2 - CampSkills2.skill3.mana);
+      const updatedSkills2 = { ...CampSkills2, skill3: { ...CampSkills2.skill3, cooldown_actual: CampSkills2.skill3.cooldown } };
+      setCampSkills2(updatedSkills2);
+    }
   };
-
+  
   return (
     <div className='tablero'>
       <div className='dialogo'>
         <div>{campeon1.name}</div>
+        <div></div>
+        <div></div>
         <div></div>
         <div></div>
         <div></div>
@@ -129,64 +148,53 @@ const Tablero = ({
         <div></div>
         <div></div>
         <div></div>
-        {Turno == 1 && (
-          <>
-            <div>
-              <button className={CampSkills1.skill1.cooldown_actual > 0 ? "habilidad_cooldown" : "habilidad"}
-                onClick={Camp1Hab1}>
-                Hab:{CampSkills1.skill1.nombre}
-                Cd:{CampSkills1.skill1.cooldown_actual}
-              </button>
-            </div>
-            <div>
-              <button className={CampSkills1.skill2.cooldown_actual > 0 ? "habilidad_cooldown" : "habilidad"}
-                onClick={Camp1Hab2}>
-                Hab:{CampSkills1.skill2.nombre}
-                Cd:{CampSkills1.skill2.cooldown_actual}
-              </button>
-            </div>
-            <div>
-              <button className={CampSkills1.skill3.cooldown_actual > 0 ? "habilidad_cooldown" : "habilidad"}
-                onClick={Camp1Hab3}>
-                Hab:{CampSkills1.skill3.nombre}
-                Cd:{CampSkills1.skill3.cooldown_actual}
-              </button>
-            </div>
-          </>
-        )}
-
-        {Turno == 2 && (
-          <>
-            <div>
-              <button className={CampSkills2.skill1.cooldown_actual > 0 ? "habilidad_cooldown" : "habilidad"}
-                onClick={Camp1Hab1}>
-                Hab:{CampSkills2.skill1.nombre}
-                Cd:{CampSkills2.skill1.cooldown_actual}
-              </button>
-            </div>
-            <div>
-              <button className={CampSkills2.skill2.cooldown_actual > 0 ? "habilidad_cooldown" : "habilidad"}
-                onClick={Camp1Hab2}>
-                Hab:{CampSkills2.skill2.nombre}
-                Cd:{CampSkills2.skill2.cooldown_actual}
-              </button>
-            </div>
-            <div>
-              <button className={CampSkills2.skill3.cooldown_actual > 0 ? "habilidad_cooldown" : "habilidad"}
-                onClick={Camp1Hab3}>
-                Hab:{CampSkills2.skill3.nombre}
-                Cd:{CampSkills2.skill3.cooldown_actual}
-              </button>
-            </div>
-          </>
-        )}
-
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         <div>
+          {Turno === 1 && (
+            <div className="campeon-icon" style={{ backgroundImage: `url(${campeon1.imagen})` }}></div>
+          )}
+        </div>
+        <div>
+          <button className={`habilidad ${Turno !== 1 && "hidden"}`} onClick={Camp1Hab1}>
+            {CampSkills1.skill1.cooldown_actual > 0 ? CampSkills1.skill1.cooldown_actual : CampSkills1.skill1.nombre}
+          </button>
+        </div>
+        <div>
+          <button className={`habilidad ${Turno !== 1 && "hidden"}`} onClick={Camp1Hab2}>
+            {CampSkills1.skill2.cooldown_actual > 0 ? CampSkills1.skill2.cooldown_actual : CampSkills1.skill2.nombre}
+          </button>
+        </div>
+        <div>
+          <button className={`habilidad ${Turno !== 1 && "hidden"}`} onClick={Camp1Hab3}>
+            {CampSkills1.skill3.cooldown_actual > 0 ? CampSkills1.skill3.cooldown_actual : CampSkills1.skill3.nombre}
+          </button>
+        </div>
+        <div>
+          <button className={`habilidad ${Turno !== 2 && "hidden"}`} onClick={Camp2Hab1}>
+            {CampSkills2.skill1.cooldown_actual > 0 ? CampSkills2.skill1.cooldown_actual : CampSkills2.skill1.nombre}
+          </button>
+        </div>
+        <div>
+          <button className={`habilidad ${Turno !== 2 && "hidden"}`} onClick={Camp2Hab2}>
+            {CampSkills2.skill2.cooldown_actual > 0 ? CampSkills2.skill2.cooldown_actual : CampSkills2.skill2.nombre}
+          </button>
+        </div>
+        <div>
+          <button className={`habilidad ${Turno !== 2 && "hidden"}`} onClick={Camp2Hab3}>
+            {CampSkills2.skill3.cooldown_actual > 0 ? CampSkills2.skill3.cooldown_actual : CampSkills2.skill3.nombre}
+          </button>
+        </div>
+        <div>
+          {Turno === 2 && (
+            <div className="campeon-icon" style={{ backgroundImage: `url(${campeon2.imagen})` }}></div>
+          )}
         </div>
       </div>
     </div>
   );
 };
-
 
 export default Tablero;

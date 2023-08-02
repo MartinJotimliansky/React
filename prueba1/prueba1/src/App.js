@@ -16,51 +16,55 @@ const App = () => {
   const [VidaActual2, setVidaActual2] = useState(0)
   const [ManaActual1, setManaActual1] = useState(0)
   const [ManaActual2, setManaActual2] = useState(0)
-
-
+  const [Player, setPlayer] = useState(1)
+  
   const handleCampeonClick = (campeon) => {
     setSelectedCampeon(campeon);
   };
 
-  const handleFijarSeleccion = (player) => {
-    const isPlayerOne = player === '1';
-    const isPlayerTwo = player === '2';
-    if (isPlayerOne) {
+  const handleFijarSeleccion = (Player) => {
+    console.log('12')
+    if (Player==1) {
+      console.log('13')
       setCampeon1(selectedCampeon);
-      setFijarCampeon1(isPlayerOne);
+      setFijarCampeon1(true);
+      console.log(setFijarCampeon1)
       setVidaActual1(selectedCampeon.stats.HPACTUAL)
       setManaActual1(selectedCampeon.stats.ManaActual)
-    } else if (isPlayerTwo) {
+    } else if (Player==2) {
+      console.log("p1"+fijarCampeon1)
       setCampeon2(selectedCampeon);
-      setFijarCampeon2(isPlayerTwo);
+      setFijarCampeon2(true);
       setVidaActual2(selectedCampeon.stats.HPACTUAL)
       setManaActual2(selectedCampeon.stats.ManaActual)
-      console.log("2" + isPlayerTwo)
+      
     }
   };
 
   return (
     <div className="container">
       <div className="campeon-details">
-        {!fijarCampeon1 && (
-          <>
-            <CampeonDetails
-              player="1" 
-              campeon={selectedCampeon}
-              handleFijarSeleccion={handleFijarSeleccion}
-            />
-            {selectedCampeon && (
-              <button onClick={() => handleFijarSeleccion('1')}>Fijar Selección</button>
+      <>
+            {!fijarCampeon1 ? (
+              <>
+                <CampeonDetails
+                  player="1"
+                  campeon={selectedCampeon}
+                  handleFijarSeleccion={handleFijarSeleccion}
+                  
+                />
+                {selectedCampeon && (
+                  <button onClick={() => handleFijarSeleccion('1')}>Fijar Selección</button>
+                )}
+              </>
+            ) : (
+              <CampeonDetails 
+              player="1" campeon={campeon1} 
+              fijado1={fijarCampeon1} fijado2={fijarCampeon2} 
+              VidaActual1={VidaActual1 !== 0 && VidaActual1 !== undefined ? VidaActual1 : null} 
+              ManaActual2={ManaActual1 !== 0 && ManaActual1 !== undefined ? ManaActual1 : null} />
             )}
           </>
-        )} 
-         {fijarCampeon1 &&(
-          <CampeonDetails player="1" campeon1={campeon1}
-           fijado1={fijarCampeon1} 
-           ManaActual1={ManaActual1 !== 0 && ManaActual1 !== undefined ? ManaActual1 : null} 
-           VidaActual1={VidaActual1 !== 0 && VidaActual1 !== undefined ? VidaActual1 : null} />
-           
-        )}
       </div>
 
       <div className="campeones-grid">
